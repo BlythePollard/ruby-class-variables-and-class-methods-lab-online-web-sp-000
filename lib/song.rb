@@ -45,9 +45,9 @@ end
     artist_count = {}
     @@artists.do each |key|
     if artist_count[key]
-       artist_count[key] = 1
+       artist_count[key] += 1
     elsif artist_count[key]#'s value is > 1  
-      artist_count[key] += 1
+      artist_count[key] = 1
   end
 end
 end
