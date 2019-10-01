@@ -31,11 +31,11 @@ class Song
   def self.genre_count
     genre_count = {}
     @@genres.each do |key| 
-     if genre_count[key] #check if key is unique- if output is one way, then add 1 to counter
+     if genre_count[key] 
        genre_count[key] += 1
-      else #if output is the other way, remove from array 
+      else genre_count[key] = 1 
      end
-     genre_count #put out hash with keys and genre amounts
+     genre_count 
   end
 end
   
@@ -44,7 +44,7 @@ end
   def self.artist_count
     artist_count = {}
     @@artists.do each |key|
-    if artist_count[key]#'s value is 0
+    if artist_count[key]
        artist_count[key] = 1
     elsif artist_count[key]#'s value is > 1  
       artist_count[key] += 1
