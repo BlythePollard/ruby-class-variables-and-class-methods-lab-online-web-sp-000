@@ -46,8 +46,7 @@ end
     @@artists.do each |key|
     if artist_count[key]
        artist_count[key] += 1
-    else 
-      artist_count[key] = 1
+    else artist_count[key] = 1
   end
 end
 artist_count
