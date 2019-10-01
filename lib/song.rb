@@ -50,5 +50,6 @@ end
       artist_count[key] = 1
   end
 end
+artist_count
 end
   
