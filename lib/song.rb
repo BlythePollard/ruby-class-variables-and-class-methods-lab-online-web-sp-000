@@ -43,7 +43,7 @@ end
   
   def self.artist_count
     artist_count = {}
-    @@artists.do each |key|
+    @@artists.each do |key|
     if artist_count[key]
        artist_count[key] += 1
     else artist_count[key] = 1
